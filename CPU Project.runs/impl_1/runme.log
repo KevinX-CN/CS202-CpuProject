@@ -1,0 +1,14 @@
+
+*** Running vivado
+    with args -log CPU32.vdi -applog -m64 -product Vivado -messageDb vivado.pb -mode batch -source CPU32.tcl -notrace
+
+
+****** Vivado v2017.4 (64-bit)
+  **** SW Build 2086221 on Fri Dec 15 20:55:39 MST 2017
+  **** IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
+    ** Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+
+source CPU32.tcl -notrace
+Command: link_design -top CPU32 -part xc7a12ticsg325-1L
+Design is defaulting to srcset: sources_1
+Design is defaulting to constrset: constrs_1

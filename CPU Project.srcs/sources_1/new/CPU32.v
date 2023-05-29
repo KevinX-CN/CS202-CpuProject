@@ -155,7 +155,15 @@ module CPU32(
     //data to program_rom or dmemory32
     wire [31:0] upg_dat_o;
     wire spg_bufg;
-    uart_bmpg_0 U1(.I(start_pg), .O(spg_bufg)); // de-twitter
+    uart_bmpg_0 U1(
+        .upg_rst_i(upg_rst),
+        .upg_clk_i(upg_clk),
+        .upg_adr_o(upg_adr_o),
+        .upg_wen_o(upg_wen_o),
+        .upg_done_o(upg_done_o),
+        .upg_clk_o(upg_clk_o),
+        .upg_dat_o(upg_dat_o)
+     ); // de-twitter
     // Generate UART Programmer reset signal
     reg upg_rst;
     always @ (posedge fpga_clk) begin

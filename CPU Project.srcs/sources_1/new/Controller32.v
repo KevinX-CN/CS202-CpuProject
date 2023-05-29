@@ -49,10 +49,10 @@ module Controller32(
     assign RegDST = (Op==6'b000000)? 1'b1 : 1'b0;
     
     assign MemtoReg= (Op==6'b100011) ? 1'b1 : 1'b0;
-    assign RegWrite = (R_format || (Op==6'b010111) || Jal || I_format) && !(Jr);
+    assign RegWrite = (RegDST || (Op==6'b010111) || Jal || I_format) && !(Jr);
     assign MemWrite= (Op==6'b101011) ? 1'b1 : 1'b0;
     assign ALUSrc=(ALUOp==2'b01) ? 1'b0 : 1'b1;
-    assign Sftmd = (((Func==6'b000000)||(Func==6'b000010)||(Func==6'b000011)||(Func==6'b000100)||(Func==6'b000110)||(Func==6'b000111))&& R_format) ? 1'b1 : 1'b0;
+    assign Sftmd = (((Func==6'b000000)||(Func==6'b000010)||(Func==6'b000011)||(Func==6'b000100)||(Func==6'b000110)||(Func==6'b000111))&& RegDST) ? 1'b1 : 1'b0;
     assign I_format = (Op[5:3]==3'b001) ? 1'b1 : 1'b0;
-    assign ALUOp = { (R_format || I_format) , (Branch || nBranch) };
+    assign ALUOp = { (RegDST || I_format) , (Branch || nBranch) };
 endmodule

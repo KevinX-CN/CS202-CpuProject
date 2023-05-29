@@ -14,14 +14,756 @@ Starting synth_design
 Attempting to get a license for feature 'Synthesis' and/or device 'xc7a12ti'
 INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a12ti'
 INFO: Launching helper process for spawning children vivado processes
-INFO: Helper process launched with PID 25840 
-ERROR: [Synth 8-1031] R_format is not declared [D:/Projects/CS202/CPU Project/CPU Project.srcs/sources_1/new/Controller32.v:52]
-ERROR: [Synth 8-1031] R_format is not declared [D:/Projects/CS202/CPU Project/CPU Project.srcs/sources_1/new/Controller32.v:55]
-ERROR: [Synth 8-1031] R_format is not declared [D:/Projects/CS202/CPU Project/CPU Project.srcs/sources_1/new/Controller32.v:57]
-INFO: [Synth 8-2350] module Controller32 ignored due to previous errors [D:/Projects/CS202/CPU Project/CPU Project.srcs/sources_1/new/Controller32.v:23]
-Failed to read verilog 'D:/Projects/CS202/CPU Project/CPU Project.srcs/sources_1/new/Controller32.v'
+INFO: Helper process launched with PID 22104 
+WARNING: [Synth 8-2611] redeclaration of ansi port seg is not allowed [D:/Projects/CS202/CPU Project/CPU Project.srcs/sources_1/new/Screen.v:11]
+WARNING: [Synth 8-2611] redeclaration of ansi port seg1 is not allowed [D:/Projects/CS202/CPU Project/CPU Project.srcs/sources_1/new/Screen.v:12]
+WARNING: [Synth 8-2611] redeclaration of ansi port an is not allowed [D:/Projects/CS202/CPU Project/CPU Project.srcs/sources_1/new/Screen.v:13]
+WARNING: [Synth 8-992] clkin is already implicitly declared earlier [D:/Projects/CS202/CPU Project/CPU Project.srcs/sources_1/new/CPU32.v:40]
+WARNING: [Synth 8-992] clkout is already implicitly declared earlier [D:/Projects/CS202/CPU Project/CPU Project.srcs/sources_1/new/CPU32.v:41]
+WARNING: [Synth 8-992] Jr is already implicitly declared earlier [D:/Projects/CS202/CPU Project/CPU Project.srcs/sources_1/new/CPU32.v:68]
+WARNING: [Synth 8-992] Jmp is already implicitly declared earlier [D:/Projects/CS202/CPU Project/CPU Project.srcs/sources_1/new/CPU32.v:69]
+WARNING: [Synth 8-992] Jal is already implicitly declared earlier [D:/Projects/CS202/CPU Project/CPU Project.srcs/sources_1/new/CPU32.v:70]
+WARNING: [Synth 8-992] Branch is already implicitly declared earlier [D:/Projects/CS202/CPU Project/CPU Project.srcs/sources_1/new/CPU32.v:71]
+WARNING: [Synth 8-992] nBranch is already implicitly declared earlier [D:/Projects/CS202/CPU Project/CPU Project.srcs/sources_1/new/CPU32.v:72]
+WARNING: [Synth 8-992] ALUOp is already implicitly declared earlier [D:/Projects/CS202/CPU Project/CPU Project.srcs/sources_1/new/CPU32.v:73]
+WARNING: [Synth 8-992] RegWrite is already implicitly declared earlier [D:/Projects/CS202/CPU Project/CPU Project.srcs/sources_1/new/CPU32.v:75]
+WARNING: [Synth 8-992] ALUSrc is already implicitly declared earlier [D:/Projects/CS202/CPU Project/CPU Project.srcs/sources_1/new/CPU32.v:76]
+WARNING: [Synth 8-992] MemWrite is already implicitly declared earlier [D:/Projects/CS202/CPU Project/CPU Project.srcs/sources_1/new/CPU32.v:77]
+WARNING: [Synth 8-992] MemtoReg is already implicitly declared earlier [D:/Projects/CS202/CPU Project/CPU Project.srcs/sources_1/new/CPU32.v:78]
+WARNING: [Synth 8-992] Zero is already implicitly declared earlier [D:/Projects/CS202/CPU Project/CPU Project.srcs/sources_1/new/CPU32.v:101]
+WARNING: [Synth 8-992] Addr_result is already implicitly declared earlier [D:/Projects/CS202/CPU Project/CPU Project.srcs/sources_1/new/CPU32.v:102]
+WARNING: [Synth 8-992] Read_data_1 is already implicitly declared earlier [D:/Projects/CS202/CPU Project/CPU Project.srcs/sources_1/new/CPU32.v:103]
+WARNING: [Synth 8-992] branch_base_addr is already implicitly declared earlier [D:/Projects/CS202/CPU Project/CPU Project.srcs/sources_1/new/CPU32.v:106]
+WARNING: [Synth 8-992] link_addr is already implicitly declared earlier [D:/Projects/CS202/CPU Project/CPU Project.srcs/sources_1/new/CPU32.v:107]
+WARNING: [Synth 8-992] upg_rst is already implicitly declared earlier [D:/Projects/CS202/CPU Project/CPU Project.srcs/sources_1/new/CPU32.v:168]
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 356.566 ; gain = 113.281
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'CPU32' [D:/Projects/CS202/CPU Project/CPU Project.srcs/sources_1/new/CPU32.v:23]
+INFO: [Synth 8-638] synthesizing module 'cpuclk' [D:/Projects/CS202/CPU Project/CPU Project.runs/synth_1/.Xil/Vivado-23440-KevinX/realtime/cpuclk_stub.v:5]
+INFO: [Synth 8-256] done synthesizing module 'cpuclk' (1#1) [D:/Projects/CS202/CPU Project/CPU Project.runs/synth_1/.Xil/Vivado-23440-KevinX/realtime/cpuclk_stub.v:5]
+WARNING: [Synth 8-85] always block has no event control specified [D:/Projects/CS202/CPU Project/CPU Project.srcs/sources_1/new/CPU32.v:43]
+INFO: [Synth 8-638] synthesizing module 'Controller32' [D:/Projects/CS202/CPU Project/CPU Project.srcs/sources_1/new/Controller32.v:23]
+INFO: [Synth 8-256] done synthesizing module 'Controller32' (2#1) [D:/Projects/CS202/CPU Project/CPU Project.srcs/sources_1/new/Controller32.v:23]
+WARNING: [Synth 8-689] width (1) of port connection 'ALUOp' does not match port width (2) of module 'Controller32' [D:/Projects/CS202/CPU Project/CPU Project.srcs/sources_1/new/CPU32.v:63]
+INFO: [Synth 8-638] synthesizing module 'IFetch32' [D:/Projects/CS202/CPU Project/CPU Project.srcs/sources_1/new/IFetch32.v:23]
+INFO: [Synth 8-638] synthesizing module 'ProgramROM32' [D:/Projects/CS202/CPU Project/CPU Project.srcs/sources_1/new/ProgramROM32.v:23]
+INFO: [Synth 8-638] synthesizing module 'prgrom' [D:/Projects/CS202/CPU Project/CPU Project.runs/synth_1/.Xil/Vivado-23440-KevinX/realtime/prgrom_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'prgrom' (3#1) [D:/Projects/CS202/CPU Project/CPU Project.runs/synth_1/.Xil/Vivado-23440-KevinX/realtime/prgrom_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'ProgramROM32' (4#1) [D:/Projects/CS202/CPU Project/CPU Project.srcs/sources_1/new/ProgramROM32.v:23]
+INFO: [Synth 8-256] done synthesizing module 'IFetch32' (5#1) [D:/Projects/CS202/CPU Project/CPU Project.srcs/sources_1/new/IFetch32.v:23]
+WARNING: [Synth 8-689] width (1) of port connection 'Addr_result' does not match port width (32) of module 'IFetch32' [D:/Projects/CS202/CPU Project/CPU Project.srcs/sources_1/new/CPU32.v:82]
+WARNING: [Synth 8-689] width (1) of port connection 'Read_data_1' does not match port width (32) of module 'IFetch32' [D:/Projects/CS202/CPU Project/CPU Project.srcs/sources_1/new/CPU32.v:84]
+WARNING: [Synth 8-689] width (1) of port connection 'branch_base_addr' does not match port width (32) of module 'IFetch32' [D:/Projects/CS202/CPU Project/CPU Project.srcs/sources_1/new/CPU32.v:91]
+WARNING: [Synth 8-689] width (1) of port connection 'link_addr' does not match port width (32) of module 'IFetch32' [D:/Projects/CS202/CPU Project/CPU Project.srcs/sources_1/new/CPU32.v:92]
+WARNING: [Synth 8-689] width (1) of port connection 'upg_adr_i' does not match port width (14) of module 'IFetch32' [D:/Projects/CS202/CPU Project/CPU Project.srcs/sources_1/new/CPU32.v:97]
+WARNING: [Synth 8-689] width (1) of port connection 'upg_dat_i' does not match port width (32) of module 'IFetch32' [D:/Projects/CS202/CPU Project/CPU Project.srcs/sources_1/new/CPU32.v:98]
+INFO: [Synth 8-638] synthesizing module 'ALU32' [D:/Projects/CS202/CPU Project/CPU Project.srcs/sources_1/new/ALU32.v:23]
+INFO: [Synth 8-226] default block is never used [D:/Projects/CS202/CPU Project/CPU Project.srcs/sources_1/new/ALU32.v:56]
+INFO: [Synth 8-256] done synthesizing module 'ALU32' (6#1) [D:/Projects/CS202/CPU Project/CPU Project.srcs/sources_1/new/ALU32.v:23]
+WARNING: [Synth 8-689] width (1) of port connection 'Read_data_1' does not match port width (32) of module 'ALU32' [D:/Projects/CS202/CPU Project/CPU Project.srcs/sources_1/new/CPU32.v:111]
+WARNING: [Synth 8-689] width (1) of port connection 'Read_data_2' does not match port width (32) of module 'ALU32' [D:/Projects/CS202/CPU Project/CPU Project.srcs/sources_1/new/CPU32.v:112]
+WARNING: [Synth 8-689] width (1) of port connection 'Sign_extend' does not match port width (32) of module 'ALU32' [D:/Projects/CS202/CPU Project/CPU Project.srcs/sources_1/new/CPU32.v:113]
+WARNING: [Synth 8-689] width (6) of port connection 'Shamt' does not match port width (5) of module 'ALU32' [D:/Projects/CS202/CPU Project/CPU Project.srcs/sources_1/new/CPU32.v:117]
+WARNING: [Synth 8-689] width (1) of port connection 'PC_plus_4' does not match port width (32) of module 'ALU32' [D:/Projects/CS202/CPU Project/CPU Project.srcs/sources_1/new/CPU32.v:118]
+WARNING: [Synth 8-689] width (1) of port connection 'ALUOp' does not match port width (2) of module 'ALU32' [D:/Projects/CS202/CPU Project/CPU Project.srcs/sources_1/new/CPU32.v:120]
+WARNING: [Synth 8-689] width (1) of port connection 'ALU_Result' does not match port width (32) of module 'ALU32' [D:/Projects/CS202/CPU Project/CPU Project.srcs/sources_1/new/CPU32.v:125]
+WARNING: [Synth 8-689] width (1) of port connection 'Addr_Result' does not match port width (32) of module 'ALU32' [D:/Projects/CS202/CPU Project/CPU Project.srcs/sources_1/new/CPU32.v:127]
+INFO: [Synth 8-638] synthesizing module 'Decoder32' [D:/Projects/CS202/CPU Project/CPU Project.srcs/sources_1/new/Decoder.v:23]
+INFO: [Synth 8-256] done synthesizing module 'Decoder32' (7#1) [D:/Projects/CS202/CPU Project/CPU Project.srcs/sources_1/new/Decoder.v:23]
+WARNING: [Synth 8-689] width (1) of port connection 'ALU_Result' does not match port width (32) of module 'Decoder32' [D:/Projects/CS202/CPU Project/CPU Project.srcs/sources_1/new/CPU32.v:135]
+WARNING: [Synth 8-689] width (1) of port connection 'Memory_data' does not match port width (32) of module 'Decoder32' [D:/Projects/CS202/CPU Project/CPU Project.srcs/sources_1/new/CPU32.v:136]
+WARNING: [Synth 8-689] width (1) of port connection 'PC_plus_4' does not match port width (32) of module 'Decoder32' [D:/Projects/CS202/CPU Project/CPU Project.srcs/sources_1/new/CPU32.v:137]
+WARNING: [Synth 8-689] width (1) of port connection 'Read_data_1' does not match port width (32) of module 'Decoder32' [D:/Projects/CS202/CPU Project/CPU Project.srcs/sources_1/new/CPU32.v:145]
+WARNING: [Synth 8-689] width (1) of port connection 'Read_data_2' does not match port width (32) of module 'Decoder32' [D:/Projects/CS202/CPU Project/CPU Project.srcs/sources_1/new/CPU32.v:146]
+WARNING: [Synth 8-689] width (1) of port connection 'Extend' does not match port width (32) of module 'Decoder32' [D:/Projects/CS202/CPU Project/CPU Project.srcs/sources_1/new/CPU32.v:147]
+INFO: [Synth 8-638] synthesizing module 'uart_bmpg_0' [D:/Projects/CS202/CPU Project/CPU Project.runs/synth_1/.Xil/Vivado-23440-KevinX/realtime/uart_bmpg_0_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'uart_bmpg_0' (8#1) [D:/Projects/CS202/CPU Project/CPU Project.runs/synth_1/.Xil/Vivado-23440-KevinX/realtime/uart_bmpg_0_stub.v:6]
+WARNING: [Synth 8-350] instance 'U1' of module 'uart_bmpg_0' requires 9 connections, but only 7 given [D:/Projects/CS202/CPU Project/CPU Project.srcs/sources_1/new/CPU32.v:158]
+INFO: [Synth 8-638] synthesizing module 'MemOrIO' [D:/Projects/CS202/CPU Project/CPU Project.srcs/sources_1/new/MemOrIO.v:3]
+INFO: [Synth 8-256] done synthesizing module 'MemOrIO' (9#1) [D:/Projects/CS202/CPU Project/CPU Project.srcs/sources_1/new/MemOrIO.v:3]
+WARNING: [Synth 8-689] width (1) of port connection 'addr_in' does not match port width (32) of module 'MemOrIO' [D:/Projects/CS202/CPU Project/CPU Project.srcs/sources_1/new/CPU32.v:181]
+WARNING: [Synth 8-689] width (1) of port connection 'addr_out' does not match port width (32) of module 'MemOrIO' [D:/Projects/CS202/CPU Project/CPU Project.srcs/sources_1/new/CPU32.v:182]
+WARNING: [Synth 8-689] width (1) of port connection 'M_ReadData' does not match port width (32) of module 'MemOrIO' [D:/Projects/CS202/CPU Project/CPU Project.srcs/sources_1/new/CPU32.v:183]
+WARNING: [Synth 8-689] width (1) of port connection 'IO_ReadData' does not match port width (16) of module 'MemOrIO' [D:/Projects/CS202/CPU Project/CPU Project.srcs/sources_1/new/CPU32.v:184]
+WARNING: [Synth 8-689] width (1) of port connection 'test_index' does not match port width (3) of module 'MemOrIO' [D:/Projects/CS202/CPU Project/CPU Project.srcs/sources_1/new/CPU32.v:185]
+WARNING: [Synth 8-689] width (1) of port connection 'Reg_WriteData' does not match port width (32) of module 'MemOrIO' [D:/Projects/CS202/CPU Project/CPU Project.srcs/sources_1/new/CPU32.v:187]
+WARNING: [Synth 8-689] width (1) of port connection 'Reg_ReadData' does not match port width (32) of module 'MemOrIO' [D:/Projects/CS202/CPU Project/CPU Project.srcs/sources_1/new/CPU32.v:188]
+WARNING: [Synth 8-689] width (1) of port connection 'write_data' does not match port width (32) of module 'MemOrIO' [D:/Projects/CS202/CPU Project/CPU Project.srcs/sources_1/new/CPU32.v:189]
+WARNING: [Synth 8-4446] all outputs are unconnected for this instance and logic may be removed [D:/Projects/CS202/CPU Project/CPU Project.srcs/sources_1/new/CPU32.v:194]
+INFO: [Synth 8-638] synthesizing module 'Debounce' [D:/Projects/CS202/CPU Project/CPU Project.srcs/sources_1/new/debounce.v:1]
+	Parameter maxcnt bound to: 500000 - type: integer 
+WARNING: [Synth 8-5788] Register delay1_reg in module Debounce is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/Projects/CS202/CPU Project/CPU Project.srcs/sources_1/new/debounce.v:26]
+WARNING: [Synth 8-5788] Register delay2_reg in module Debounce is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/Projects/CS202/CPU Project/CPU Project.srcs/sources_1/new/debounce.v:27]
+WARNING: [Synth 8-5788] Register delay3_reg in module Debounce is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/Projects/CS202/CPU Project/CPU Project.srcs/sources_1/new/debounce.v:28]
+INFO: [Synth 8-256] done synthesizing module 'Debounce' (10#1) [D:/Projects/CS202/CPU Project/CPU Project.srcs/sources_1/new/debounce.v:1]
+INFO: [Synth 8-638] synthesizing module 'Screen' [D:/Projects/CS202/CPU Project/CPU Project.srcs/sources_1/new/Screen.v:1]
+	Parameter maxcnt bound to: 50000 - type: integer 
+INFO: [Synth 8-226] default block is never used [D:/Projects/CS202/CPU Project/CPU Project.srcs/sources_1/new/Screen.v:34]
+WARNING: [Synth 8-567] referenced signal 'an' should be on the sensitivity list [D:/Projects/CS202/CPU Project/CPU Project.srcs/sources_1/new/Screen.v:82]
+INFO: [Synth 8-256] done synthesizing module 'Screen' (11#1) [D:/Projects/CS202/CPU Project/CPU Project.srcs/sources_1/new/Screen.v:1]
+WARNING: [Synth 8-689] width (1) of port connection 'number' does not match port width (32) of module 'Screen' [D:/Projects/CS202/CPU Project/CPU Project.srcs/sources_1/new/CPU32.v:203]
+WARNING: [Synth 8-689] width (1) of port connection 'seg' does not match port width (8) of module 'Screen' [D:/Projects/CS202/CPU Project/CPU Project.srcs/sources_1/new/CPU32.v:204]
+WARNING: [Synth 8-689] width (1) of port connection 'seg1' does not match port width (8) of module 'Screen' [D:/Projects/CS202/CPU Project/CPU Project.srcs/sources_1/new/CPU32.v:205]
+WARNING: [Synth 8-689] width (1) of port connection 'an' does not match port width (8) of module 'Screen' [D:/Projects/CS202/CPU Project/CPU Project.srcs/sources_1/new/CPU32.v:206]
+WARNING: [Synth 8-3848] Net led2N4 in module/entity CPU32 does not have driver. [D:/Projects/CS202/CPU Project/CPU Project.srcs/sources_1/new/CPU32.v:27]
+WARNING: [Synth 8-3848] Net tx in module/entity CPU32 does not have driver. [D:/Projects/CS202/CPU Project/CPU Project.srcs/sources_1/new/CPU32.v:32]
+WARNING: [Synth 8-3848] Net clk in module/entity CPU32 does not have driver. [D:/Projects/CS202/CPU Project/CPU Project.srcs/sources_1/new/CPU32.v:80]
+WARNING: [Synth 8-3848] Net restn in module/entity CPU32 does not have driver. [D:/Projects/CS202/CPU Project/CPU Project.srcs/sources_1/new/CPU32.v:81]
+WARNING: [Synth 8-3848] Net upg_clk_i in module/entity CPU32 does not have driver. [D:/Projects/CS202/CPU Project/CPU Project.srcs/sources_1/new/CPU32.v:95]
+WARNING: [Synth 8-3848] Net upg_wen_i in module/entity CPU32 does not have driver. [D:/Projects/CS202/CPU Project/CPU Project.srcs/sources_1/new/CPU32.v:96]
+WARNING: [Synth 8-3848] Net upg_adr_i in module/entity CPU32 does not have driver. [D:/Projects/CS202/CPU Project/CPU Project.srcs/sources_1/new/CPU32.v:97]
+WARNING: [Synth 8-3848] Net upg_dat_i in module/entity CPU32 does not have driver. [D:/Projects/CS202/CPU Project/CPU Project.srcs/sources_1/new/CPU32.v:98]
+WARNING: [Synth 8-3848] Net upg_done_i in module/entity CPU32 does not have driver. [D:/Projects/CS202/CPU Project/CPU Project.srcs/sources_1/new/CPU32.v:99]
+WARNING: [Synth 8-3848] Net re in module/entity CPU32 does not have driver. [D:/Projects/CS202/CPU Project/CPU Project.srcs/sources_1/new/CPU32.v:132]
+WARNING: [Synth 8-3848] Net Memory_data in module/entity CPU32 does not have driver. [D:/Projects/CS202/CPU Project/CPU Project.srcs/sources_1/new/CPU32.v:136]
+WARNING: [Synth 8-3848] Net MemRead in module/entity CPU32 does not have driver. [D:/Projects/CS202/CPU Project/CPU Project.srcs/sources_1/new/CPU32.v:177]
+WARNING: [Synth 8-3848] Net IORead in module/entity CPU32 does not have driver. [D:/Projects/CS202/CPU Project/CPU Project.srcs/sources_1/new/CPU32.v:179]
+WARNING: [Synth 8-3848] Net IOWrite in module/entity CPU32 does not have driver. [D:/Projects/CS202/CPU Project/CPU Project.srcs/sources_1/new/CPU32.v:180]
+WARNING: [Synth 8-3848] Net addr_in in module/entity CPU32 does not have driver. [D:/Projects/CS202/CPU Project/CPU Project.srcs/sources_1/new/CPU32.v:181]
+WARNING: [Synth 8-3848] Net M_ReadData in module/entity CPU32 does not have driver. [D:/Projects/CS202/CPU Project/CPU Project.srcs/sources_1/new/CPU32.v:183]
+WARNING: [Synth 8-3848] Net IO_ReadData in module/entity CPU32 does not have driver. [D:/Projects/CS202/CPU Project/CPU Project.srcs/sources_1/new/CPU32.v:184]
+WARNING: [Synth 8-3848] Net test_index in module/entity CPU32 does not have driver. [D:/Projects/CS202/CPU Project/CPU Project.srcs/sources_1/new/CPU32.v:185]
+WARNING: [Synth 8-3848] Net InputCtrl in module/entity CPU32 does not have driver. [D:/Projects/CS202/CPU Project/CPU Project.srcs/sources_1/new/CPU32.v:186]
+WARNING: [Synth 8-3848] Net Reg_ReadData in module/entity CPU32 does not have driver. [D:/Projects/CS202/CPU Project/CPU Project.srcs/sources_1/new/CPU32.v:188]
+WARNING: [Synth 8-3848] Net IN in module/entity CPU32 does not have driver. [D:/Projects/CS202/CPU Project/CPU Project.srcs/sources_1/new/CPU32.v:197]
+WARNING: [Synth 8-3848] Net OUT in module/entity CPU32 does not have driver. [D:/Projects/CS202/CPU Project/CPU Project.srcs/sources_1/new/CPU32.v:198]
+WARNING: [Synth 8-3848] Net number in module/entity CPU32 does not have driver. [D:/Projects/CS202/CPU Project/CPU Project.srcs/sources_1/new/CPU32.v:203]
+WARNING: [Synth 8-3848] Net upg_clk in module/entity CPU32 does not have driver. [D:/Projects/CS202/CPU Project/CPU Project.srcs/sources_1/new/CPU32.v:150]
+WARNING: [Synth 8-3848] Net spg_bufg in module/entity CPU32 does not have driver. [D:/Projects/CS202/CPU Project/CPU Project.srcs/sources_1/new/CPU32.v:157]
+INFO: [Synth 8-256] done synthesizing module 'CPU32' (12#1) [D:/Projects/CS202/CPU Project/CPU Project.srcs/sources_1/new/CPU32.v:23]
+WARNING: [Synth 8-3331] design Screen has unconnected port rst
+WARNING: [Synth 8-3331] design MemOrIO has unconnected port MemRead
+WARNING: [Synth 8-3331] design ALU32 has unconnected port Opcode[5]
+WARNING: [Synth 8-3331] design ALU32 has unconnected port Opcode[4]
+WARNING: [Synth 8-3331] design ALU32 has unconnected port Opcode[3]
+WARNING: [Synth 8-3331] design CPU32 has unconnected port led2N4[23]
+WARNING: [Synth 8-3331] design CPU32 has unconnected port led2N4[22]
+WARNING: [Synth 8-3331] design CPU32 has unconnected port led2N4[21]
+WARNING: [Synth 8-3331] design CPU32 has unconnected port led2N4[20]
+WARNING: [Synth 8-3331] design CPU32 has unconnected port led2N4[19]
+WARNING: [Synth 8-3331] design CPU32 has unconnected port led2N4[18]
+WARNING: [Synth 8-3331] design CPU32 has unconnected port led2N4[17]
+WARNING: [Synth 8-3331] design CPU32 has unconnected port led2N4[16]
+WARNING: [Synth 8-3331] design CPU32 has unconnected port led2N4[15]
+WARNING: [Synth 8-3331] design CPU32 has unconnected port led2N4[14]
+WARNING: [Synth 8-3331] design CPU32 has unconnected port led2N4[13]
+WARNING: [Synth 8-3331] design CPU32 has unconnected port led2N4[12]
+WARNING: [Synth 8-3331] design CPU32 has unconnected port led2N4[11]
+WARNING: [Synth 8-3331] design CPU32 has unconnected port led2N4[10]
+WARNING: [Synth 8-3331] design CPU32 has unconnected port led2N4[9]
+WARNING: [Synth 8-3331] design CPU32 has unconnected port led2N4[8]
+WARNING: [Synth 8-3331] design CPU32 has unconnected port led2N4[7]
+WARNING: [Synth 8-3331] design CPU32 has unconnected port led2N4[6]
+WARNING: [Synth 8-3331] design CPU32 has unconnected port led2N4[5]
+WARNING: [Synth 8-3331] design CPU32 has unconnected port led2N4[4]
+WARNING: [Synth 8-3331] design CPU32 has unconnected port led2N4[3]
+WARNING: [Synth 8-3331] design CPU32 has unconnected port led2N4[2]
+WARNING: [Synth 8-3331] design CPU32 has unconnected port led2N4[1]
+WARNING: [Synth 8-3331] design CPU32 has unconnected port led2N4[0]
+WARNING: [Synth 8-3331] design CPU32 has unconnected port tx
+WARNING: [Synth 8-3331] design CPU32 has unconnected port switch2N4[23]
+WARNING: [Synth 8-3331] design CPU32 has unconnected port switch2N4[22]
+WARNING: [Synth 8-3331] design CPU32 has unconnected port switch2N4[21]
+WARNING: [Synth 8-3331] design CPU32 has unconnected port switch2N4[20]
+WARNING: [Synth 8-3331] design CPU32 has unconnected port switch2N4[19]
+WARNING: [Synth 8-3331] design CPU32 has unconnected port switch2N4[18]
+WARNING: [Synth 8-3331] design CPU32 has unconnected port switch2N4[17]
+WARNING: [Synth 8-3331] design CPU32 has unconnected port switch2N4[16]
+WARNING: [Synth 8-3331] design CPU32 has unconnected port switch2N4[15]
+WARNING: [Synth 8-3331] design CPU32 has unconnected port switch2N4[14]
+WARNING: [Synth 8-3331] design CPU32 has unconnected port switch2N4[13]
+WARNING: [Synth 8-3331] design CPU32 has unconnected port switch2N4[12]
+WARNING: [Synth 8-3331] design CPU32 has unconnected port switch2N4[11]
+WARNING: [Synth 8-3331] design CPU32 has unconnected port switch2N4[10]
+WARNING: [Synth 8-3331] design CPU32 has unconnected port switch2N4[9]
+WARNING: [Synth 8-3331] design CPU32 has unconnected port switch2N4[8]
+WARNING: [Synth 8-3331] design CPU32 has unconnected port switch2N4[7]
+WARNING: [Synth 8-3331] design CPU32 has unconnected port switch2N4[6]
+WARNING: [Synth 8-3331] design CPU32 has unconnected port switch2N4[5]
+WARNING: [Synth 8-3331] design CPU32 has unconnected port switch2N4[4]
+WARNING: [Synth 8-3331] design CPU32 has unconnected port switch2N4[3]
+WARNING: [Synth 8-3331] design CPU32 has unconnected port switch2N4[2]
+WARNING: [Synth 8-3331] design CPU32 has unconnected port switch2N4[1]
+WARNING: [Synth 8-3331] design CPU32 has unconnected port switch2N4[0]
+WARNING: [Synth 8-3331] design CPU32 has unconnected port start_pg
+WARNING: [Synth 8-3331] design CPU32 has unconnected port rx
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 391.758 ; gain = 148.473
+---------------------------------------------------------------------------------
+CRITICAL WARNING: [Synth 8-3352] multi-driven net fpga_clk with 1st driver pin 'clk1/clk_out2' [D:/Projects/CS202/CPU Project/CPU Project.srcs/sources_1/new/CPU32.v:35]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net fpga_clk with 2nd driver pin 'fpga_clk' [D:/Projects/CS202/CPU Project/CPU Project.srcs/sources_1/new/CPU32.v:23]
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        1|Failed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+WARNING: [Synth 8-3295] tying undriven pin IFetch:clock to constant 0 [D:/Projects/CS202/CPU Project/CPU Project.srcs/sources_1/new/CPU32.v:79]
+WARNING: [Synth 8-3295] tying undriven pin IFetch:reset to constant 0 [D:/Projects/CS202/CPU Project/CPU Project.srcs/sources_1/new/CPU32.v:79]
+WARNING: [Synth 8-3295] tying undriven pin IFetch:upg_clk_i to constant 0 [D:/Projects/CS202/CPU Project/CPU Project.srcs/sources_1/new/CPU32.v:79]
+WARNING: [Synth 8-3295] tying undriven pin IFetch:upg_wen_i to constant 0 [D:/Projects/CS202/CPU Project/CPU Project.srcs/sources_1/new/CPU32.v:79]
+WARNING: [Synth 8-3295] tying undriven pin IFetch:upg_adr_i[0] to constant 0 [D:/Projects/CS202/CPU Project/CPU Project.srcs/sources_1/new/CPU32.v:79]
+WARNING: [Synth 8-3295] tying undriven pin IFetch:upg_dat_i[0] to constant 0 [D:/Projects/CS202/CPU Project/CPU Project.srcs/sources_1/new/CPU32.v:79]
+WARNING: [Synth 8-3295] tying undriven pin IFetch:upg_done_i to constant 0 [D:/Projects/CS202/CPU Project/CPU Project.srcs/sources_1/new/CPU32.v:79]
+WARNING: [Synth 8-3295] tying undriven pin Decoder:rst to constant 0 [D:/Projects/CS202/CPU Project/CPU Project.srcs/sources_1/new/CPU32.v:130]
+WARNING: [Synth 8-3295] tying undriven pin Decoder:Memory_data[0] to constant 0 [D:/Projects/CS202/CPU Project/CPU Project.srcs/sources_1/new/CPU32.v:130]
+WARNING: [Synth 8-3295] tying undriven pin MemOrIOU1:IORead to constant 0 [D:/Projects/CS202/CPU Project/CPU Project.srcs/sources_1/new/CPU32.v:176]
+WARNING: [Synth 8-3295] tying undriven pin MemOrIOU1:IOWrite to constant 0 [D:/Projects/CS202/CPU Project/CPU Project.srcs/sources_1/new/CPU32.v:176]
+WARNING: [Synth 8-3295] tying undriven pin MemOrIOU1:addr_in[0] to constant 0 [D:/Projects/CS202/CPU Project/CPU Project.srcs/sources_1/new/CPU32.v:176]
+WARNING: [Synth 8-3295] tying undriven pin MemOrIOU1:M_ReadData[0] to constant 0 [D:/Projects/CS202/CPU Project/CPU Project.srcs/sources_1/new/CPU32.v:176]
+WARNING: [Synth 8-3295] tying undriven pin MemOrIOU1:IO_ReadData[0] to constant 0 [D:/Projects/CS202/CPU Project/CPU Project.srcs/sources_1/new/CPU32.v:176]
+WARNING: [Synth 8-3295] tying undriven pin MemOrIOU1:test_index[0] to constant 0 [D:/Projects/CS202/CPU Project/CPU Project.srcs/sources_1/new/CPU32.v:176]
+WARNING: [Synth 8-3295] tying undriven pin MemOrIOU1:InputCtrl to constant 0 [D:/Projects/CS202/CPU Project/CPU Project.srcs/sources_1/new/CPU32.v:176]
+WARNING: [Synth 8-3295] tying undriven pin MemOrIOU1:Reg_ReadData[0] to constant 0 [D:/Projects/CS202/CPU Project/CPU Project.srcs/sources_1/new/CPU32.v:176]
+WARNING: [Synth 8-3295] tying undriven pin Debounce:rst to constant 0 [D:/Projects/CS202/CPU Project/CPU Project.srcs/sources_1/new/CPU32.v:194]
+WARNING: [Synth 8-3295] tying undriven pin Debounce:IN to constant 0 [D:/Projects/CS202/CPU Project/CPU Project.srcs/sources_1/new/CPU32.v:194]
+WARNING: [Synth 8-3295] tying undriven pin Debounce:OUT to constant 0 [D:/Projects/CS202/CPU Project/CPU Project.srcs/sources_1/new/CPU32.v:194]
+WARNING: [Synth 8-3295] tying undriven pin Screen:number[0] to constant 0 [D:/Projects/CS202/CPU Project/CPU Project.srcs/sources_1/new/CPU32.v:200]
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 391.758 ; gain = 148.473
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7a12ticsg325-1L
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [D:/Projects/CS202/CPU Project/CPU Project.runs/synth_1/.Xil/Vivado-23440-KevinX/dcp3/prgrom_in_context.xdc] for cell 'IFetch/instmem/instmem'
+Finished Parsing XDC File [D:/Projects/CS202/CPU Project/CPU Project.runs/synth_1/.Xil/Vivado-23440-KevinX/dcp3/prgrom_in_context.xdc] for cell 'IFetch/instmem/instmem'
+Parsing XDC File [D:/Projects/CS202/CPU Project/CPU Project.runs/synth_1/.Xil/Vivado-23440-KevinX/dcp4/uart_bmpg_0_in_context.xdc] for cell 'U1'
+Finished Parsing XDC File [D:/Projects/CS202/CPU Project/CPU Project.runs/synth_1/.Xil/Vivado-23440-KevinX/dcp4/uart_bmpg_0_in_context.xdc] for cell 'U1'
+Parsing XDC File [D:/Projects/CS202/CPU Project/CPU Project.runs/synth_1/.Xil/Vivado-23440-KevinX/dcp5/cpuclk_in_context.xdc] for cell 'clk1'
+Finished Parsing XDC File [D:/Projects/CS202/CPU Project/CPU Project.runs/synth_1/.Xil/Vivado-23440-KevinX/dcp5/cpuclk_in_context.xdc] for cell 'clk1'
+Completed Processing XDC Constraints
+
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.013 . Memory (MB): peak = 718.527 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:11 ; elapsed = 00:00:13 . Memory (MB): peak = 718.527 ; gain = 475.242
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a12ticsg325-1L
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:11 ; elapsed = 00:00:13 . Memory (MB): peak = 718.527 ; gain = 475.242
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property DONT_TOUCH = true for IFetch/instmem/instmem. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for U1. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for clk1. (constraint file  auto generated constraint, line ).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:11 ; elapsed = 00:00:13 . Memory (MB): peak = 718.527 ; gain = 475.242
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5546] ROM "Jmp" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "Jal" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "Branch" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "nBranch" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "RegDST" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "MemtoReg" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "I_format" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "MemWrite" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "ALUSrc" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [D:/Projects/CS202/CPU Project/CPU Project.srcs/sources_1/new/ALU32.v:56]
+INFO: [Synth 8-5545] ROM "Zero" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5546] ROM "Reg_reg[31]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "Reg_reg[30]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "Reg_reg[29]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "Reg_reg[28]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "Reg_reg[27]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "Reg_reg[26]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "Reg_reg[25]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "Reg_reg[24]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "Reg_reg[23]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "Reg_reg[22]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "Reg_reg[21]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "Reg_reg[20]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "Reg_reg[19]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "Reg_reg[18]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "Reg_reg[17]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "Reg_reg[16]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "Reg_reg[15]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "Reg_reg[14]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "Reg_reg[13]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "Reg_reg[12]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "Reg_reg[11]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "Reg_reg[10]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "Reg_reg[9]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "Reg_reg[8]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "Reg_reg[7]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "Reg_reg[6]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "Reg_reg[5]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "Reg_reg[4]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "Reg_reg[3]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "Reg_reg[2]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "Reg_reg[1]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "Reg_reg[0]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5545] ROM "LEDELCtrl" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "LEDELCtrl" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5544] ROM "LEDCtrl" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "SwitchCtrl" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "divclk" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "divclk" won't be mapped to RAM because it is too sparse
+WARNING: [Synth 8-327] inferring latch for variable 'seg_reg' [D:/Projects/CS202/CPU Project/CPU Project.srcs/sources_1/new/Screen.v:87]
+WARNING: [Synth 8-327] inferring latch for variable 'seg1_reg' [D:/Projects/CS202/CPU Project/CPU Project.srcs/sources_1/new/Screen.v:108]
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:11 ; elapsed = 00:00:13 . Memory (MB): peak = 718.527 ; gain = 475.242
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 3     
+	   3 Input     32 Bit       Adders := 1     
+	   2 Input     19 Bit       Adders := 2     
+	   2 Input      3 Bit       Adders := 1     
++---XORs : 
+	   2 Input     32 Bit         XORs := 1     
++---Registers : 
+	               32 Bit    Registers := 32    
+	               19 Bit    Registers := 2     
+	                8 Bit    Registers := 1     
+	                4 Bit    Registers := 1     
+	                3 Bit    Registers := 1     
+	                1 Bit    Registers := 6     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 14    
+	   8 Input     32 Bit        Muxes := 2     
+	   2 Input     19 Bit        Muxes := 2     
+	   4 Input     16 Bit        Muxes := 1     
+	   2 Input     14 Bit        Muxes := 1     
+	   2 Input     13 Bit        Muxes := 1     
+	   8 Input      8 Bit        Muxes := 1     
+	   2 Input      6 Bit        Muxes := 1     
+	   2 Input      5 Bit        Muxes := 2     
+	   2 Input      3 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 50    
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module CPU32 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
+Module Controller32 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 11    
+Module ProgramROM32 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 1     
+	   2 Input     14 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module IFetch32 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 2     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 5     
+	   2 Input      2 Bit        Muxes := 1     
+Module ALU32 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input     32 Bit       Adders := 1     
+	   2 Input     32 Bit       Adders := 1     
++---XORs : 
+	   2 Input     32 Bit         XORs := 1     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 4     
+	   8 Input     32 Bit        Muxes := 2     
+	   2 Input      6 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 2     
+Module Decoder32 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 32    
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 3     
+	   2 Input     13 Bit        Muxes := 1     
+	   2 Input      5 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 32    
+Module MemOrIO 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 1     
+	   4 Input     16 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 1     
+Module Debounce 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     19 Bit       Adders := 1     
++---Registers : 
+	               19 Bit    Registers := 1     
+	                1 Bit    Registers := 4     
++---Muxes : 
+	   2 Input     19 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 3     
+Module Screen 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     19 Bit       Adders := 1     
+	   2 Input      3 Bit       Adders := 1     
++---Registers : 
+	               19 Bit    Registers := 1     
+	                8 Bit    Registers := 1     
+	                4 Bit    Registers := 1     
+	                3 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     19 Bit        Muxes := 1     
+	   8 Input      8 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 40 (col length:40)
+BRAMs: 40 (col length: RAMB18 40 RAMB36 20)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5545] ROM "Zero" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5546] ROM "Controller/nBranch" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "Controller/Branch" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "Debounce/divclk" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "Screen/divclk" won't be mapped to RAM because it is too sparse
+WARNING: [Synth 8-3331] design ALU32 has unconnected port Opcode[5]
+WARNING: [Synth 8-3331] design ALU32 has unconnected port Opcode[4]
+WARNING: [Synth 8-3331] design ALU32 has unconnected port Opcode[3]
+WARNING: [Synth 8-3331] design CPU32 has unconnected port led2N4[23]
+WARNING: [Synth 8-3331] design CPU32 has unconnected port led2N4[22]
+WARNING: [Synth 8-3331] design CPU32 has unconnected port led2N4[21]
+WARNING: [Synth 8-3331] design CPU32 has unconnected port led2N4[20]
+WARNING: [Synth 8-3331] design CPU32 has unconnected port led2N4[19]
+WARNING: [Synth 8-3331] design CPU32 has unconnected port led2N4[18]
+WARNING: [Synth 8-3331] design CPU32 has unconnected port led2N4[17]
+WARNING: [Synth 8-3331] design CPU32 has unconnected port led2N4[16]
+WARNING: [Synth 8-3331] design CPU32 has unconnected port led2N4[15]
+WARNING: [Synth 8-3331] design CPU32 has unconnected port led2N4[14]
+WARNING: [Synth 8-3331] design CPU32 has unconnected port led2N4[13]
+WARNING: [Synth 8-3331] design CPU32 has unconnected port led2N4[12]
+WARNING: [Synth 8-3331] design CPU32 has unconnected port led2N4[11]
+WARNING: [Synth 8-3331] design CPU32 has unconnected port led2N4[10]
+WARNING: [Synth 8-3331] design CPU32 has unconnected port led2N4[9]
+WARNING: [Synth 8-3331] design CPU32 has unconnected port led2N4[8]
+WARNING: [Synth 8-3331] design CPU32 has unconnected port led2N4[7]
+WARNING: [Synth 8-3331] design CPU32 has unconnected port led2N4[6]
+WARNING: [Synth 8-3331] design CPU32 has unconnected port led2N4[5]
+WARNING: [Synth 8-3331] design CPU32 has unconnected port led2N4[4]
+WARNING: [Synth 8-3331] design CPU32 has unconnected port led2N4[3]
+WARNING: [Synth 8-3331] design CPU32 has unconnected port led2N4[2]
+WARNING: [Synth 8-3331] design CPU32 has unconnected port led2N4[1]
+WARNING: [Synth 8-3331] design CPU32 has unconnected port led2N4[0]
+WARNING: [Synth 8-3331] design CPU32 has unconnected port tx
+WARNING: [Synth 8-3331] design CPU32 has unconnected port switch2N4[23]
+WARNING: [Synth 8-3331] design CPU32 has unconnected port switch2N4[22]
+WARNING: [Synth 8-3331] design CPU32 has unconnected port switch2N4[21]
+WARNING: [Synth 8-3331] design CPU32 has unconnected port switch2N4[20]
+WARNING: [Synth 8-3331] design CPU32 has unconnected port switch2N4[19]
+WARNING: [Synth 8-3331] design CPU32 has unconnected port switch2N4[18]
+WARNING: [Synth 8-3331] design CPU32 has unconnected port switch2N4[17]
+WARNING: [Synth 8-3331] design CPU32 has unconnected port switch2N4[16]
+WARNING: [Synth 8-3331] design CPU32 has unconnected port switch2N4[15]
+WARNING: [Synth 8-3331] design CPU32 has unconnected port switch2N4[14]
+WARNING: [Synth 8-3331] design CPU32 has unconnected port switch2N4[13]
+WARNING: [Synth 8-3331] design CPU32 has unconnected port switch2N4[12]
+WARNING: [Synth 8-3331] design CPU32 has unconnected port switch2N4[11]
+WARNING: [Synth 8-3331] design CPU32 has unconnected port switch2N4[10]
+WARNING: [Synth 8-3331] design CPU32 has unconnected port switch2N4[9]
+WARNING: [Synth 8-3331] design CPU32 has unconnected port switch2N4[8]
+INFO: [Common 17-14] Message 'Synth 8-3331' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+WARNING: [Synth 8-3332] Sequential element (IFetch/PC_reg[31]) is unused and will be removed from module CPU32.
+WARNING: [Synth 8-3332] Sequential element (IFetch/PC_reg[30]) is unused and will be removed from module CPU32.
+WARNING: [Synth 8-3332] Sequential element (IFetch/PC_reg[29]) is unused and will be removed from module CPU32.
+WARNING: [Synth 8-3332] Sequential element (IFetch/PC_reg[28]) is unused and will be removed from module CPU32.
+WARNING: [Synth 8-3332] Sequential element (IFetch/PC_reg[27]) is unused and will be removed from module CPU32.
+WARNING: [Synth 8-3332] Sequential element (IFetch/PC_reg[26]) is unused and will be removed from module CPU32.
+WARNING: [Synth 8-3332] Sequential element (IFetch/PC_reg[25]) is unused and will be removed from module CPU32.
+WARNING: [Synth 8-3332] Sequential element (IFetch/PC_reg[24]) is unused and will be removed from module CPU32.
+WARNING: [Synth 8-3332] Sequential element (IFetch/PC_reg[23]) is unused and will be removed from module CPU32.
+WARNING: [Synth 8-3332] Sequential element (IFetch/PC_reg[22]) is unused and will be removed from module CPU32.
+WARNING: [Synth 8-3332] Sequential element (IFetch/PC_reg[21]) is unused and will be removed from module CPU32.
+WARNING: [Synth 8-3332] Sequential element (IFetch/PC_reg[20]) is unused and will be removed from module CPU32.
+WARNING: [Synth 8-3332] Sequential element (IFetch/PC_reg[19]) is unused and will be removed from module CPU32.
+WARNING: [Synth 8-3332] Sequential element (IFetch/PC_reg[18]) is unused and will be removed from module CPU32.
+WARNING: [Synth 8-3332] Sequential element (IFetch/PC_reg[17]) is unused and will be removed from module CPU32.
+WARNING: [Synth 8-3332] Sequential element (IFetch/PC_reg[16]) is unused and will be removed from module CPU32.
+WARNING: [Synth 8-3332] Sequential element (Reg_reg[31][31]) is unused and will be removed from module Decoder32.
+WARNING: [Synth 8-3332] Sequential element (Reg_reg[31][30]) is unused and will be removed from module Decoder32.
+WARNING: [Synth 8-3332] Sequential element (Reg_reg[31][29]) is unused and will be removed from module Decoder32.
+WARNING: [Synth 8-3332] Sequential element (Reg_reg[31][28]) is unused and will be removed from module Decoder32.
+WARNING: [Synth 8-3332] Sequential element (Reg_reg[31][27]) is unused and will be removed from module Decoder32.
+WARNING: [Synth 8-3332] Sequential element (Reg_reg[31][26]) is unused and will be removed from module Decoder32.
+WARNING: [Synth 8-3332] Sequential element (Reg_reg[31][25]) is unused and will be removed from module Decoder32.
+WARNING: [Synth 8-3332] Sequential element (Reg_reg[31][24]) is unused and will be removed from module Decoder32.
+WARNING: [Synth 8-3332] Sequential element (Reg_reg[31][23]) is unused and will be removed from module Decoder32.
+WARNING: [Synth 8-3332] Sequential element (Reg_reg[31][22]) is unused and will be removed from module Decoder32.
+WARNING: [Synth 8-3332] Sequential element (Reg_reg[31][21]) is unused and will be removed from module Decoder32.
+WARNING: [Synth 8-3332] Sequential element (Reg_reg[31][20]) is unused and will be removed from module Decoder32.
+WARNING: [Synth 8-3332] Sequential element (Reg_reg[31][19]) is unused and will be removed from module Decoder32.
+WARNING: [Synth 8-3332] Sequential element (Reg_reg[31][18]) is unused and will be removed from module Decoder32.
+WARNING: [Synth 8-3332] Sequential element (Reg_reg[31][17]) is unused and will be removed from module Decoder32.
+WARNING: [Synth 8-3332] Sequential element (Reg_reg[31][16]) is unused and will be removed from module Decoder32.
+WARNING: [Synth 8-3332] Sequential element (Reg_reg[31][15]) is unused and will be removed from module Decoder32.
+WARNING: [Synth 8-3332] Sequential element (Reg_reg[31][14]) is unused and will be removed from module Decoder32.
+WARNING: [Synth 8-3332] Sequential element (Reg_reg[31][13]) is unused and will be removed from module Decoder32.
+WARNING: [Synth 8-3332] Sequential element (Reg_reg[31][12]) is unused and will be removed from module Decoder32.
+WARNING: [Synth 8-3332] Sequential element (Reg_reg[31][11]) is unused and will be removed from module Decoder32.
+WARNING: [Synth 8-3332] Sequential element (Reg_reg[31][10]) is unused and will be removed from module Decoder32.
+WARNING: [Synth 8-3332] Sequential element (Reg_reg[31][9]) is unused and will be removed from module Decoder32.
+WARNING: [Synth 8-3332] Sequential element (Reg_reg[31][8]) is unused and will be removed from module Decoder32.
+WARNING: [Synth 8-3332] Sequential element (Reg_reg[31][7]) is unused and will be removed from module Decoder32.
+WARNING: [Synth 8-3332] Sequential element (Reg_reg[31][6]) is unused and will be removed from module Decoder32.
+WARNING: [Synth 8-3332] Sequential element (Reg_reg[31][5]) is unused and will be removed from module Decoder32.
+WARNING: [Synth 8-3332] Sequential element (Reg_reg[31][4]) is unused and will be removed from module Decoder32.
+WARNING: [Synth 8-3332] Sequential element (Reg_reg[31][3]) is unused and will be removed from module Decoder32.
+WARNING: [Synth 8-3332] Sequential element (Reg_reg[31][2]) is unused and will be removed from module Decoder32.
+WARNING: [Synth 8-3332] Sequential element (Reg_reg[31][1]) is unused and will be removed from module Decoder32.
+WARNING: [Synth 8-3332] Sequential element (Reg_reg[30][31]) is unused and will be removed from module Decoder32.
+WARNING: [Synth 8-3332] Sequential element (Reg_reg[30][30]) is unused and will be removed from module Decoder32.
+WARNING: [Synth 8-3332] Sequential element (Reg_reg[30][29]) is unused and will be removed from module Decoder32.
+WARNING: [Synth 8-3332] Sequential element (Reg_reg[30][28]) is unused and will be removed from module Decoder32.
+WARNING: [Synth 8-3332] Sequential element (Reg_reg[30][27]) is unused and will be removed from module Decoder32.
+WARNING: [Synth 8-3332] Sequential element (Reg_reg[30][26]) is unused and will be removed from module Decoder32.
+WARNING: [Synth 8-3332] Sequential element (Reg_reg[30][25]) is unused and will be removed from module Decoder32.
+WARNING: [Synth 8-3332] Sequential element (Reg_reg[30][24]) is unused and will be removed from module Decoder32.
+WARNING: [Synth 8-3332] Sequential element (Reg_reg[30][23]) is unused and will be removed from module Decoder32.
+WARNING: [Synth 8-3332] Sequential element (Reg_reg[30][22]) is unused and will be removed from module Decoder32.
+WARNING: [Synth 8-3332] Sequential element (Reg_reg[30][21]) is unused and will be removed from module Decoder32.
+WARNING: [Synth 8-3332] Sequential element (Reg_reg[30][20]) is unused and will be removed from module Decoder32.
+WARNING: [Synth 8-3332] Sequential element (Reg_reg[30][19]) is unused and will be removed from module Decoder32.
+WARNING: [Synth 8-3332] Sequential element (Reg_reg[30][18]) is unused and will be removed from module Decoder32.
+WARNING: [Synth 8-3332] Sequential element (Reg_reg[30][17]) is unused and will be removed from module Decoder32.
+WARNING: [Synth 8-3332] Sequential element (Reg_reg[30][16]) is unused and will be removed from module Decoder32.
+WARNING: [Synth 8-3332] Sequential element (Reg_reg[30][15]) is unused and will be removed from module Decoder32.
+WARNING: [Synth 8-3332] Sequential element (Reg_reg[30][14]) is unused and will be removed from module Decoder32.
+WARNING: [Synth 8-3332] Sequential element (Reg_reg[30][13]) is unused and will be removed from module Decoder32.
+WARNING: [Synth 8-3332] Sequential element (Reg_reg[30][12]) is unused and will be removed from module Decoder32.
+WARNING: [Synth 8-3332] Sequential element (Reg_reg[30][11]) is unused and will be removed from module Decoder32.
+WARNING: [Synth 8-3332] Sequential element (Reg_reg[30][10]) is unused and will be removed from module Decoder32.
+WARNING: [Synth 8-3332] Sequential element (Reg_reg[30][9]) is unused and will be removed from module Decoder32.
+WARNING: [Synth 8-3332] Sequential element (Reg_reg[30][8]) is unused and will be removed from module Decoder32.
+WARNING: [Synth 8-3332] Sequential element (Reg_reg[30][7]) is unused and will be removed from module Decoder32.
+WARNING: [Synth 8-3332] Sequential element (Reg_reg[30][6]) is unused and will be removed from module Decoder32.
+WARNING: [Synth 8-3332] Sequential element (Reg_reg[30][5]) is unused and will be removed from module Decoder32.
+WARNING: [Synth 8-3332] Sequential element (Reg_reg[30][4]) is unused and will be removed from module Decoder32.
+WARNING: [Synth 8-3332] Sequential element (Reg_reg[30][3]) is unused and will be removed from module Decoder32.
+WARNING: [Synth 8-3332] Sequential element (Reg_reg[30][2]) is unused and will be removed from module Decoder32.
+WARNING: [Synth 8-3332] Sequential element (Reg_reg[30][1]) is unused and will be removed from module Decoder32.
+WARNING: [Synth 8-3332] Sequential element (Reg_reg[29][31]) is unused and will be removed from module Decoder32.
+WARNING: [Synth 8-3332] Sequential element (Reg_reg[29][30]) is unused and will be removed from module Decoder32.
+WARNING: [Synth 8-3332] Sequential element (Reg_reg[29][29]) is unused and will be removed from module Decoder32.
+WARNING: [Synth 8-3332] Sequential element (Reg_reg[29][28]) is unused and will be removed from module Decoder32.
+WARNING: [Synth 8-3332] Sequential element (Reg_reg[29][27]) is unused and will be removed from module Decoder32.
+WARNING: [Synth 8-3332] Sequential element (Reg_reg[29][26]) is unused and will be removed from module Decoder32.
+WARNING: [Synth 8-3332] Sequential element (Reg_reg[29][25]) is unused and will be removed from module Decoder32.
+WARNING: [Synth 8-3332] Sequential element (Reg_reg[29][24]) is unused and will be removed from module Decoder32.
+WARNING: [Synth 8-3332] Sequential element (Reg_reg[29][23]) is unused and will be removed from module Decoder32.
+WARNING: [Synth 8-3332] Sequential element (Reg_reg[29][22]) is unused and will be removed from module Decoder32.
+WARNING: [Synth 8-3332] Sequential element (Reg_reg[29][21]) is unused and will be removed from module Decoder32.
+WARNING: [Synth 8-3332] Sequential element (Reg_reg[29][20]) is unused and will be removed from module Decoder32.
+WARNING: [Synth 8-3332] Sequential element (Reg_reg[29][19]) is unused and will be removed from module Decoder32.
+WARNING: [Synth 8-3332] Sequential element (Reg_reg[29][18]) is unused and will be removed from module Decoder32.
+WARNING: [Synth 8-3332] Sequential element (Reg_reg[29][17]) is unused and will be removed from module Decoder32.
+WARNING: [Synth 8-3332] Sequential element (Reg_reg[29][16]) is unused and will be removed from module Decoder32.
+WARNING: [Synth 8-3332] Sequential element (Reg_reg[29][15]) is unused and will be removed from module Decoder32.
+WARNING: [Synth 8-3332] Sequential element (Reg_reg[29][14]) is unused and will be removed from module Decoder32.
+WARNING: [Synth 8-3332] Sequential element (Reg_reg[29][13]) is unused and will be removed from module Decoder32.
+WARNING: [Synth 8-3332] Sequential element (Reg_reg[29][12]) is unused and will be removed from module Decoder32.
+WARNING: [Synth 8-3332] Sequential element (Reg_reg[29][11]) is unused and will be removed from module Decoder32.
+WARNING: [Synth 8-3332] Sequential element (Reg_reg[29][10]) is unused and will be removed from module Decoder32.
+INFO: [Common 17-14] Message 'Synth 8-3332' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:18 ; elapsed = 00:00:20 . Memory (MB): peak = 718.527 ; gain = 475.242
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5578] Moved timing constraint from pin 'clk1/clk_in1' to pin 'clkin0_inferred/i_0/O'
+INFO: [Synth 8-5578] Moved timing constraint from pin 'clk1/clk_out1' to pin 'clk1/bbstub_clk_out1/O'
+INFO: [Synth 8-5783] Moving clock source from hierarchical pin 'clk1/clk_in1' to 'clkin0_inferred/i_0/I'
+INFO: [Synth 8-5578] Moved timing constraint from pin 'clk1/clk_out2' to pin 'clk1/bbstub_clk_out2/O fpga_clk'
+INFO: [Synth 8-5783] Moving clock source from hierarchical pin 'clk1/clk_in1' to 'clkin0_inferred/i_0/I'
+INFO: [Synth 8-5819] Moved 3 constraints on hierarchical pins to their respective driving/loading pins
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:24 ; elapsed = 00:00:26 . Memory (MB): peak = 743.465 ; gain = 500.180
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+Found timing loop:
+     0: clkin0_inferred/i_0/I (INV)
+     1: clkin0_inferred/i_0/I (INV)
+CRITICAL WARNING: [Synth 8-295] found timing loop. [D:/Projects/CS202/CPU Project/CPU Project.srcs/sources_1/new/CPU32.v:43]
+Inferred a: "set_disable_timing -from I -to O clkin0_inferred/i_0"
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:27 ; elapsed = 00:00:30 . Memory (MB): peak = 838.199 ; gain = 594.914
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:27 ; elapsed = 00:00:30 . Memory (MB): peak = 839.238 ; gain = 595.953
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+CRITICAL WARNING: [Synth 8-4442] BlackBox module U1 has unconnected pin upg_clk_i
+CRITICAL WARNING: [Synth 8-4442] BlackBox module U1 has unconnected pin upg_rx_i
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:28 ; elapsed = 00:00:30 . Memory (MB): peak = 839.238 ; gain = 595.953
+---------------------------------------------------------------------------------
+CRITICAL WARNING: [Synth 8-3352] multi-driven net fpga_clk with 1st driver pin 'clk1/clk_out2' [D:/Projects/CS202/CPU Project/CPU Project.srcs/sources_1/new/CPU32.v:35]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net fpga_clk with 2nd driver pin 'fpga_clk' [D:/Projects/CS202/CPU Project/CPU Project.srcs/sources_1/new/CPU32.v:23]
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        1|Failed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:28 ; elapsed = 00:00:30 . Memory (MB): peak = 839.238 ; gain = 595.953
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-115] binding instance 'i_0' in module 'CPU32' to reference 'IFetch32' which has no pins
+WARNING: [Synth 8-115] binding instance 'i_0' in module 'IFetch32' to reference 'ProgramROM32' which has no pins
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:28 ; elapsed = 00:00:30 . Memory (MB): peak = 839.238 ; gain = 595.953
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:28 ; elapsed = 00:00:30 . Memory (MB): peak = 839.238 ; gain = 595.953
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:28 ; elapsed = 00:00:30 . Memory (MB): peak = 839.238 ; gain = 595.953
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:28 ; elapsed = 00:00:30 . Memory (MB): peak = 839.238 ; gain = 595.953
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++------+--------------+----------+
+|      |BlackBox name |Instances |
++------+--------------+----------+
+|1     |cpuclk        |         1|
+|2     |uart_bmpg_0   |         1|
+|3     |prgrom        |         1|
++------+--------------+----------+
+
+Report Cell Usage: 
++------+------------+------+
+|      |Cell        |Count |
++------+------------+------+
+|1     |cpuclk      |     1|
+|2     |prgrom      |     1|
+|3     |uart_bmpg_0 |     1|
+|4     |LUT1        |     1|
+|5     |OBUFT       |    25|
++------+------------+------+
+
+Report Instance Areas: 
++------+------------+-------------+------+
+|      |Instance    |Module       |Cells |
++------+------------+-------------+------+
+|1     |top         |             |   111|
+|2     |  IFetch    |IFetch32     |    32|
+|3     |    instmem |ProgramROM32 |    32|
++------+------------+-------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:28 ; elapsed = 00:00:30 . Memory (MB): peak = 839.238 ; gain = 595.953
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 5 critical warnings and 1186 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:21 ; elapsed = 00:00:26 . Memory (MB): peak = 839.238 ; gain = 269.184
+Synthesis Optimization Complete : Time (s): cpu = 00:00:28 ; elapsed = 00:00:30 . Memory (MB): peak = 839.238 ; gain = 595.953
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
 INFO: [Common 17-83] Releasing license: Synthesis
-3 Infos, 0 Warnings, 0 Critical Warnings and 4 Errors encountered.
-synth_design failed
-ERROR: [Common 17-69] Command failed: Synthesis failed - please see the console or run log file for details
-INFO: [Common 17-206] Exiting Vivado at Mon May 29 09:11:25 2023...
+97 Infos, 311 Warnings, 7 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:31 ; elapsed = 00:00:35 . Memory (MB): peak = 839.238 ; gain = 607.484
+INFO: [Common 17-1381] The checkpoint 'D:/Projects/CS202/CPU Project/CPU Project.runs/synth_1/CPU32.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file CPU32_utilization_synth.rpt -pb CPU32_utilization_synth.pb
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.015 . Memory (MB): peak = 839.238 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Mon May 29 09:19:55 2023...
