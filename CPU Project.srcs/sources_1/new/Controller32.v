@@ -42,12 +42,12 @@ module Controller32(
     if the instruction is"lw" or "sw", ALUOp is 2'b00£»*/
     );
     assign Jr =((Op==6'b000000)&&(Func==6'b001000)) ? 1'b1 : 1'b0;
-    assign Jmp = (Op==6'b000010) ? 1'b1 : 1'b0;
-    assign Jal = (Op==6'b000011) ? 1'b1 : 1'b0;
+    assign Jmp = (Op==6'b001000) ? 1'b1 : 1'b0;
+    assign Jal = (Op==6'b001100) ? 1'b1 : 1'b0;
     assign Branch = (Op==6'b000100) ? 1'b1 : 1'b0;
     assign nBranch = (Op==6'b000101) ? 1'b1 : 1'b0;
-    wire R_format = (Op==6'b000000)? 1'b1:1'b0;
-    assign RegDST = R_format;
+    assign RegDST = (Op==6'b000000)? 1'b1 : 1'b0;
+    
     assign MemtoReg= (Op==6'b100011) ? 1'b1 : 1'b0;
     assign RegWrite = (R_format || (Op==6'b010111) || Jal || I_format) && !(Jr);
     assign MemWrite= (Op==6'b101011) ? 1'b1 : 1'b0;

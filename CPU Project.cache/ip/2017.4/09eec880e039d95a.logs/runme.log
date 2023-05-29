@@ -12,6 +12,7 @@ source ROM.tcl -notrace
 Command: synth_design -top ROM -part xc7a12ticsg325-1L -mode out_of_context
 Starting synth_design
 Attempting to get a license for feature 'Synthesis' and/or device 'xc7a12ti'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a12ti'
 INFO: Launching helper process for spawning children vivado processes
 INFO: Helper process launched with PID 5676 
 ---------------------------------------------------------------------------------
